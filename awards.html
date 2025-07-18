@@ -255,19 +255,7 @@
 
   <script>
       document.addEventListener('DOMContentLoaded', function() {
-          const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
-          const mainNav = document.querySelector('.main-nav');
-
-          mobileMenuToggle.addEventListener('click', function() {
-              mainNav.classList.toggle('active');
-          });
-
-          // Close mobile menu when a link is clicked
-          mainNav.querySelectorAll('a').forEach(link => {
-              link.addEventListener('click', () => {
-                  mainNav.classList.remove('active');
-              });
-          });
+         
 
           // Accordion functionality for awards page
           const accordionHeaders = document.querySelectorAll('.accordion-header');
