@@ -1,0 +1,319 @@
+@media (max-width: 1199px) {
+  .container {
+    max-width: 960px;
+  }
+  .section-heading h2 {
+    font-size: 38px;
+  }
+  .banner .content h1 {
+    font-size: 56px;
+  }
+  .about-content .text-col h3,
+  .audience-content .text-col h3,
+  .venue-content .text-col h3 {
+    font-size: 32px;
+  }
+  .awards-banner .content h1 {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 991px) {
+  .awards-banner {
+    padding: 50px 0 30px 0;
+    min-height: 320px;
+  }
+  .awards-banner .content {
+    max-width: 95%;
+    padding: 24px 10px 28px 10px;
+  }
+  .awards-banner .award-logo {
+    width: 90px;
+    height: 90px;
+    margin-bottom: 18px;
+  }
+  .awards-banner .content h1 {
+    font-size: 2rem;
+  }
+  .awards-banner .content p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+  .awards-banner .button-style-1 {
+    font-size: 1rem;
+    padding: 10px 24px;
+  }
+
+  .container {
+    max-width: 720px;
+  }
+  .section-padding {
+    padding: 60px 0;
+  }
+  .section-heading {
+    margin-bottom: 40px;
+  }
+  .section-heading h2 {
+    font-size: 32px;
+  }
+  .button-style-1 {
+    padding: 10px 25px;
+    font-size: 15px;
+  }
+
+  .banner .content h1 {
+    font-size: 48px;
+  }
+  .banner .content p {
+    font-size: 18px;
+  }
+
+  .about-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  .about-content .image-col,
+  .about-content .text-col {
+    flex: none;
+    width: 100%;
+  }
+  .about-content .image-col img {
+    max-width: 80%;
+    margin-bottom: 30px;
+  }
+  .about-content .text-col h3 {
+    font-size: 28px;
+  }
+
+  .partners-grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+
+  .speakers-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+
+  .highlight-grid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+
+  .focus-grid {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  }
+
+  .audience-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  .audience-content .image-col,
+  .audience-content .text-col {
+    flex: none;
+    width: 100%;
+  }
+  .audience-content .image-col img {
+    max-width: 80%;
+    margin-bottom: 30px;
+  }
+  .audience-content .text-col h3 {
+    font-size: 28px;
+  }
+
+  .video-wrapper {
+    max-width: 100%;
+  }
+
+  .venue-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  .venue-content .image-col,
+  .venue-content .text-col {
+    flex: none;
+    width: 100%;
+  }
+  .venue-content .image-col img {
+    max-width: 80%;
+    margin-bottom: 30px;
+  }
+  .venue-content .text-col h3 {
+    font-size: 28px;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .footer-col h4::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .footer-col {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .awards-banner {
+    height: 60vh;
+  }
+  .awards-banner .content h1 {
+    font-size: 42px;
+  }
+  .awards-banner .award-logo {
+    max-width: 200px;
+  }
+  .award-categories-grid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+  .award-category-card h3 {
+    font-size: 22px;
+  }
+  .nomination-form-section .nomination-btn {
+    padding: 12px 30px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header .container {
+    flex-wrap: wrap;
+    justify-content: space-between; /* Ensure logo and toggle are spaced */
+  }
+  .header .logo {
+    order: 1;
+  }
+  .header .mobile-menu-toggle {
+    display: block !important; /* Show toggle button on mobile */
+    order: 2;
+  }
+  .header-buttons {
+    order: 3; /* Place buttons below logo and toggle on small screens */
+    width: 100%;
+    justify-content: center;
+    margin-top: 15px;
+  }
+  .header .main-nav {
+    width: 100%;
+    order: 4; /* Push nav below everything else */
+    margin-top: 15px;
+    display: none; /* Hidden by default for mobile */
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(90deg, var(--thm-primary-color), #1a3a5e); /* Match header background */
+    padding: 15px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  .header .main-nav.active {
+    display: flex; /* Show when active */
+  }
+  .header .main-nav ul {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px; /* Adjust spacing for vertical menu */
+  }
+  .header .main-nav ul li {
+    margin: 5px 0;
+    padding-bottom: 0; /* Remove bottom padding for vertical links */
+  }
+  .header .main-nav ul li a::after {
+    display: none; /* Hide underline animation for mobile menu */
+  }
+  .header .main-nav ul li a:hover {
+    color: var(--thm-secondary-color); /* Add hover effect for mobile links */
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    
+    max-width: 540px;
+  }
+  .section-heading h2 {
+    font-size: 28px;
+  }
+  .banner .content h1 {
+    font-size: 38px;
+  }
+  .banner .content p {
+    font-size: 16px;
+  }
+  .about-content .image-col img,
+  .audience-content .image-col img,
+  .venue-content .image-col img {
+    max-width: 100%;
+  }
+  .about-content .text-col h3,
+  .audience-content .text-col h3,
+  .venue-content .text-col h3 {
+    font-size: 24px;
+  }
+  .speakers-grid {
+    grid-template-columns: 1fr;
+  }
+  .highlight-grid,
+  .focus-grid,
+  .award-categories-grid {
+    grid-template-columns: 1fr;
+  }
+  .awards-banner {
+    height: 50vh;
+  }
+  .awards-banner .content h1 {
+    font-size: 36px;
+  }
+  .awards-banner .award-logo {
+    max-width: 150px;
+  }
+  .accordion-header {
+    font-size: 18px;
+    padding: 15px;
+  }
+  .accordion-content {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 575px) {
+  body {
+    padding-top: 70px !important;
+  }
+  .awards-banner {
+    padding-top: 120px !important;
+    padding-bottom: 60px;
+    margin-top: 50px;
+  }
+  .container {
+    padding: 0 15px; /* Adjusted for better spacing */
+  }
+  .banner .content {
+    padding: 10px;
+    max-width: 100vw;
+  }
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  .speakers-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .header .logo img {
+    max-height: 50px;
+  }
+  .banner .content h1 {
+    font-size: 32px;
+  }
+  .section-heading h2 {
+    font-size: 24px;
+  }
+  .awards-banner .content h1 {
+    font-size: 30px;
+  }
+  .awards-banner {
+    padding-top: 150px; /* Adjusted to a more reasonable value */
+    padding-bottom: 80px; /* Adjusted to a more reasonable value */
+  }
+  
+}
