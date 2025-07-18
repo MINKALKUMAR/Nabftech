@@ -175,7 +175,7 @@
   }
 }
 
-@media (max-width: 968px) {
+@media (max-width: 1024px) {
   .header .container {
     flex-wrap: nowrap;
     justify-content: space-between; /* Ensure logo and toggle are spaced */
